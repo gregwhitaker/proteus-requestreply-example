@@ -49,7 +49,8 @@ public class Main {
         helloClient.sayHello(helloRequest)
                 .doOnNext(helloResponse -> {
                     System.out.println(helloResponse.getHelloMessage());
-                });
+                })
+                .subscribe();
 
         // Keep the client running while waiting for asynchronous response
         Thread.currentThread().join();
