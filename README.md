@@ -2,6 +2,11 @@
 
 An example of using [Netifi Proteus](https://www.netifi.com) for a simple request-reply interaction with a microservice.
 
+## Prerequisites
+This example requires that you have a running Proteus broker.
+
+## Running the Example
+
 ## Bugs and Feedback
 For bugs, questions, and discussions please use the [Github Issues](https://github.com/gregwhitaker/proteus-requestreply-example/issues).
 
