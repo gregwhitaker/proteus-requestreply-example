@@ -47,7 +47,9 @@ public class Main {
         // Send hello message and print the response
         HelloWorldServiceClient helloClient = new HelloWorldServiceClient(conn);
         helloClient.sayHello(helloRequest)
-                .doOnNext(helloResponse -> System.out.println(helloResponse.getHelloMessage()));
+                .doOnNext(helloResponse -> {
+                    System.out.println(helloResponse.getHelloMessage());
+                });
 
         // Keep the client running while waiting for asynchronous response
         Thread.currentThread().join();
