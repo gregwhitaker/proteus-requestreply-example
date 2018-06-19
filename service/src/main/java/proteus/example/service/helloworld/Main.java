@@ -1,0 +1,8 @@
+package proteus.example.service.helloworld;
+
+public class Main {
+
+    public static void main(String... args) throws Exception {
+
+    }
+}
