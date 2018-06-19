@@ -6,6 +6,11 @@ An example of using [Netifi Proteus](https://www.netifi.com) for a simple reques
 This example requires that you have a running Proteus broker.
 
 ## Running the Example
+1. Start a Proteus Broker cluster.
+
+2. Run the following Gradle command:
+
+        $ ./gradlew runDemo
 
 ## Bugs and Feedback
 For bugs, questions, and discussions please use the [Github Issues](https://github.com/gregwhitaker/proteus-requestreply-example/issues).
