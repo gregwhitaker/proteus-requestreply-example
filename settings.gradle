@@ -1,0 +1,5 @@
+rootProject.name = 'proteus-requestreply-example'
+include 'client'
+include 'service'
+include 'service-idl'
+
