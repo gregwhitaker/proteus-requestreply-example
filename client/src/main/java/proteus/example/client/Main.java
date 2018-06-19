@@ -13,15 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package proteus.example.service.helloworld;
+package proteus.example.client;
 
-import io.netty.buffer.ByteBuf;
-import reactor.core.publisher.Mono;
+public class Main {
 
-public class DefaultHelloWorldService implements HelloWorldService {
+    public static void main(String... args) throws Exception {
 
-    @Override
-    public Mono<HelloResponse> sayHello(HelloRequest message, ByteBuf metadata) {
-        return null;
     }
 }
