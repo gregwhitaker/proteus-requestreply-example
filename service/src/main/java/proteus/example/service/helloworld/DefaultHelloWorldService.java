@@ -18,10 +18,19 @@ package proteus.example.service.helloworld;
 import io.netty.buffer.ByteBuf;
 import reactor.core.publisher.Mono;
 
+/**
+ * Service that creates hello world messages.
+ */
 public class DefaultHelloWorldService implements HelloWorldService {
 
     @Override
     public Mono<HelloResponse> sayHello(HelloRequest message, ByteBuf metadata) {
-        return null;
+        // Create response message
+        HelloResponse response = HelloResponse.newBuilder()
+                .setHelloMessage(String.format("Hello, %s!", message.getName()))
+                .build();
+
+        // Send response message
+        return Mono.just(response);
     }
 }
