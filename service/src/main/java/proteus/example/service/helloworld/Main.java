@@ -17,6 +17,8 @@ package proteus.example.service.helloworld;
 
 import io.netifi.proteus.Proteus;
 
+import java.util.Optional;
+
 public class Main {
 
     public static void main(String... args) throws Exception {
@@ -34,7 +36,7 @@ public class Main {
                 .build();
 
         // Expose hello world service via Proteus
-        proteus.addService(new HelloWorldServiceServer(new DefaultHelloWorldService()));
+        proteus.addService(new HelloWorldServiceServer(new DefaultHelloWorldService(), Optional.empty()));
 
         // Keep the service running so that it can process requests
         Thread.currentThread().join();
