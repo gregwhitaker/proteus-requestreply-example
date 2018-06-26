@@ -10,12 +10,12 @@ You can pull the latest Proteus Broker from DockerHub using the following comman
 
         $ docker pull netifi/proteus
 
-## Running the Example
-1. Start a Proteus Broker using the following command:
+Start the Proteus Broker by running the following command:
 
         $ docker run -p 8001:8001 -p 7001:7001 -e BROKER_SERVER_OPTS='-Dnetifi.authentication.0.accessKey=3006839580103245170 -Dnetifi.authentication.0.accessToken=SkOlZxqQcTboZE3fni4OVXVC0e0=' netifi/proteus
 
-2. Run the following Gradle command:
+## Running the Example
+You can start the demo by running the following Gradle command:
 
         $ ./gradlew runDemo
 
