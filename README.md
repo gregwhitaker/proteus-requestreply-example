@@ -1,4 +1,5 @@
 # proteus-requestreply-example
+[![Build Status](https://travis-ci.org/gregwhitaker/proteus-requestreply-example.svg?branch=master)](https://travis-ci.org/gregwhitaker/proteus-requestreply-example)
 
 An example of using [Netifi Proteus](https://www.netifi.com) for a simple request-reply interaction with a microservice.
 
