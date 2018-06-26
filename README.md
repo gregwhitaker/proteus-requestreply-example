@@ -6,6 +6,10 @@ An example of using [Netifi Proteus](https://www.netifi.com) for a simple reques
 ## Prerequisites
 This example requires that you have a running Proteus broker.
 
+You can pull the latest Proteus Broker from DockerHub using the following command:
+
+        $ docker pull netifi/proteus
+
 ## Running the Example
 1. Start a Proteus Broker using the following commands:
 
